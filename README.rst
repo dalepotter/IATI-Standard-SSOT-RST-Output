@@ -1,5 +1,36 @@
+=============================
 IATI-Standard-SSOT-RST-Output
 =============================
+
+Generation process
+==================
+
+These files were generated based on the `generation process <https://github.com/IATI/IATI-Standard-SSOT#building-the-documentation>`_ listed on the `IATI-Standard-SSOT repository <https://github.com/IATI/IATI-Standard-SSOT>`_
+
+.. code-block:: bash
+
+    # Fetch the source code:::
+    git clone https://github.com/IATI/IATI-Standard-SSOT.git
+
+    # Pull in the git submodules:::
+    git submodule init
+    git submodule update
+
+    # Create and activate virtual environment (recommended)
+    virtualenv pyenv
+    source pyenv/bin/activate
+
+    # Install python requirements
+    pip install -r requirements.txt
+
+    # Build the RST files:::
+    python gen.py
+
+The contents of the outputted :code:`docs` folder form the contents of this repository.
+
+
+Overview
+========
 
 This is the repository contains additional documentation about the IATI Standard, and is part of IATI Standard Single Source of Truth (SSOT). For more detailed information about the SSOT, please see https://github.com/IATI/IATI-Standard-SSOT/blob/master/meta-docs/index.rst 
 
