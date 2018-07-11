@@ -9,21 +9,21 @@ These files were generated based on the `generation process <https://github.com/
 
 .. code-block:: bash
 
-    # Fetch the source code:::
+    # Fetch the source code:
     git clone https://github.com/IATI/IATI-Standard-SSOT.git
 
-    # Pull in the git submodules:::
+    # Pull in the git submodules:
     git submodule init
     git submodule update
 
-    # Create and activate virtual environment (recommended)
+    # Create and activate virtual environment (recommended):
     virtualenv pyenv
     source pyenv/bin/activate
 
-    # Install python requirements
+    # Install python requirements:
     pip install -r requirements.txt
 
-    # Build the RST files:::
+    # Build the RST files:
     python gen.py
 
 The contents of the outputted :code:`docs` folder form the contents of this repository.
